@@ -1,4 +1,4 @@
-import {Food} from './app/shared/models/food';
+import {Food} from './app/shared/models/Food';
 import { Tag } from './app/shared/models/Tag';
 
 export const sample_foods: Food[] = [
@@ -78,7 +78,7 @@ export const sample_foods: Food[] = [
     origins: ['Romans','Greeks','Indians','🥗'],
     stars: 4.5,
     imageUrl: '/assets/food7.jpg',
-    tags: ['Healthy', 'Salad', 'Lunch'],
+    tags: [ 'Salad', 'Lunch'],
   },
   {
     id:'8',
@@ -111,5 +111,4 @@ export const sample_tags:Tag[] = [
   { name: 'Burger', count:2 },
   { name: 'Fries', count:1 },
   { name: 'Desert', count:1 },
-  { name: 'Healthy', count:1 },
 ]

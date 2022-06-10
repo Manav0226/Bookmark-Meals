@@ -8,7 +8,7 @@ export const sample_foods: any[] = [
     origins: ['Indian'],
     stars: 4.5,
     imageUrl: 'assets/food1.jpg',
-    tags: ['FastFood','Chart', 'Snacks'],
+    tags: ['FastFood','Chart'],
   },
   {
     id:'2',
@@ -75,7 +75,7 @@ export const sample_foods: any[] = [
     origins: ['Romans','Greeks','Indians','🥗'],
     stars: 4.5,
     imageUrl: 'assets/food7.jpg',
-    tags: ['Healthy', 'Salad', 'Lunch'],
+    tags: [ 'Salad', 'Lunch'],
   },
   {
     id:'8',
@@ -108,7 +108,6 @@ export const sample_tags:any[] = [
   { name: 'Burger', count:2 },
   { name: 'Fries', count:1 },
   { name: 'Desert', count:1 },
-  { name: 'Healthy', count:1 },
 ]
 
 export const sample_users: any[] = [
