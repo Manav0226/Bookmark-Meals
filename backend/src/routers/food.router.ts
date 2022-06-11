@@ -2,7 +2,6 @@ import {Router} from 'express';
 import { sample_foods, sample_tags } from '../data';
 import asyncHandler from 'express-async-handler';
 import { FoodModel } from '../models/food.models';
-
 const router = Router();
 
 router.get("/seed", asyncHandler(
@@ -78,5 +77,6 @@ router.get("/:foodId", asyncHandler(
     res.send(food);
   }
 ))
+
 
 export default router;

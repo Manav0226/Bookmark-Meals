@@ -5,7 +5,6 @@ import asyncHandler from 'express-async-handler';
 import { User, UserModel } from '../models/user.model';
 import { HTTP_BAD_REQUEST } from '../constants/http_status';
 import bcrypt from 'bcryptjs';
-
 const router = Router();
 
 router.get("/seed", asyncHandler(
@@ -32,7 +31,6 @@ router.post("/login", asyncHandler(
      else{
        res.status(HTTP_BAD_REQUEST).send("Username or password is invalid!");
      }
-  
   }
 ))
   
@@ -78,6 +76,6 @@ router.post('/register', asyncHandler(
       token: token
     };
   }
-
+  
 
   export default router;

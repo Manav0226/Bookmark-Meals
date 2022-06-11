@@ -43,24 +43,24 @@ export class UserService {
     );
   }
 
-  register(userRegister:IUserRegister): Observable<User>{
-    return this.http.post<User>(USER_REGISTER_URL, userRegister).pipe(
-      tap({
-        next: (user) => {
-          this.setUserToLocalStorage(user);
-          this.userSubject.next(user);
-          this.toastrService.success(
-            `Welcome to Bookmark Meals ${user.name}`,
-            'Register Successful'
-          )
-        },
-        error: (errorResponse) => {
-          this.toastrService.error(errorResponse.error,
-            'Register Failed')
-        }
-      })
-    );
-  }
+  // register(userRegister:IUserRegister): Observable<User>{
+  //   return this.http.post<User>(USER_REGISTER_URL, userRegister).pipe(
+  //     tap({
+  //       next: (user) => {
+  //         this.setUserToLocalStorage(user);
+  //         this.userSubject.next(user);
+  //         this.toastrService.success(
+  //           `Welcome to Bookmark Meals ${user.name}`,
+  //           'Register Successful'
+  //         )
+  //       },
+  //       error: (errorResponse) => {
+  //         this.toastrService.error(errorResponse.error,
+  //           'Register Failed')
+  //       }
+  //     })
+  //   );
+  // }
 
   logout(){
     this.userSubject.next(new User());
